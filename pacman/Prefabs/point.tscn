@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3jrjjvfyt60b"]
+
+[ext_resource type="Script" uid="uid://cjxyqpu4411p3" path="res://Scripts/Map/Point.cs" id="1_vfuwg"]
+[ext_resource type="Texture2D" uid="uid://dgvyy4i0cp6ti" path="res://Assets/Images/pacman_spritesheet.png" id="1_ysj84"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vfuwg"]
+size = Vector2(2, 2)
+
+[node name="Point" type="Area2D"]
+script = ExtResource("1_vfuwg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1, 0)
+texture = ExtResource("1_ysj84")
+region_enabled = true
+region_rect = Rect2(297, 0, 8, 8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_vfuwg")

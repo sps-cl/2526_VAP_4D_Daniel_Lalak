@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://kgtysbx5syjx"]
+
+[ext_resource type="Script" uid="uid://fk1b5qqdiqly" path="res://Ghost.cs" id="1_6attn"]
+[ext_resource type="Texture2D" uid="uid://dgvyy4i0cp6ti" path="res://Assets/Images/pacman_spritesheet.png" id="2_obmiq"]
+
+[node name="Ghost" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_6attn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="PacmanSpritesheet" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(164, 46)
+texture = ExtResource("2_obmiq")

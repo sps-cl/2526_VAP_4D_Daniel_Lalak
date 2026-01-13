@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://drb6p1ahy1npd"]
+
+[ext_resource type="Script" uid="uid://chxad0cfytga2" path="res://Prefabs/Area2d.cs" id="1_vkdg4"]
+[ext_resource type="Texture2D" uid="uid://dgvyy4i0cp6ti" path="res://Assets/Images/pacman_spritesheet.png" id="2_q1026"]
+
+[node name="Point" type="Area2D"]
+texture_filter = 1
+script = ExtResource("1_vkdg4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(80.435, 32.03)
+texture = ExtResource("2_q1026")
+region_enabled = true
+region_rect = Rect2(296, 0, 8, 8)
