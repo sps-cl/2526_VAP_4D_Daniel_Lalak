@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://cgtgtn7odnfh5"]
+
+[ext_resource type="Script" uid="uid://dm1ypa3uknjyj" path="res://ScoreDisplay.cs" id="1_424jl"]
+[ext_resource type="FontFile" uid="uid://bo1w6vkm4kmr3" path="res://Assets/Fonts/ArcadeClassic.ttf" id="2_7b0ds"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_vknkj"]
+font = ExtResource("2_7b0ds")
+
+[sub_resource type="LabelSettings" id="LabelSettings_181ct"]
+font = ExtResource("2_7b0ds")
+
+[node name="ScoreDisplay" type="HBoxContainer" node_paths=PackedStringArray("ScoreLabel")]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_424jl")
+ScoreLabel = NodePath("Score value")
+
+[node name="Score text" type="Label" parent="."]
+texture_filter = 1
+layout_mode = 2
+text = "Score"
+label_settings = SubResource("LabelSettings_vknkj")
+
+[node name="Score value" type="Label" parent="."]
+texture_filter = 1
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_181ct")
