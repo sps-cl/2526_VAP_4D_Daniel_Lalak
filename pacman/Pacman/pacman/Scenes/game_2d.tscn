@@ -117,7 +117,7 @@ sources/0 = SubResource("TileSetAtlasSource_60due")
 position = Vector2(108, 116)
 motion_mode = 1
 wall_min_slide_angle = 0.0
-Target = NodePath("../Player2D")
+Target = NodePath("../Map/NavigationLayer")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = -1
